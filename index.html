@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad</title>
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet"  href="./Estilos-Discoteca.css" type="text/css">
+</head>
+
+
+
+<body>
+    
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-sm-9 col-xl-9"> 
+
+                <div class="card">
+
+                    <div class="card-header">
+                     <h3> Foward Sun Club </h3>
+                    </div>
+
+                    <div class="card-body">
+
+
+                        <form>
+                           
+                            <div class="form-group">
+
+                              <label for="Nombre">Name</label>
+                              <input type="text" class="form-control" id="Nombre"  placeholder=" Like: Tristiam ">
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="Genero">Gender</label>
+
+                                <select class="form-control" id="Genero">
+
+                                  <option value='Male'> Male </option>
+                                  <option value='Female'> Female</option>
+                                  <option value= 'Otros'>Other</option>
+
+                                </select>
+
+                              </div>
+
+                            <div class="form-group">
+
+                                <label for="Edad">Age</label>
+                                <input type="text" class="form-control" id="Edad" placeholder="Like: 25">
+
+                            </div>
+
+
+                            <button type="button" class="btn btn-dark" onclick="Validacion ()">Send</button>
+                             
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>                     
+
+
+
+
+
+
+    <script>
+
+  function Validacion() {
+
+let Nombre = document.getElementById ('Nombre').value
+let Genero = document.getElementById ('Genero').value
+let Edad = document.getElementById ('Edad').value
+
+
+if (Edad<"18"){
+
+alert ("You are not old enough to access. Sorry dude, comeback when you 18!")
+
+}else{
+
+    alert ("CONGRATULATIOS YOU ARE IN!") 
+
+    if(Genero=="Masculino"){
+
+        alert ("Recibo: 30.000")
+
+    }else{
+
+      alert ("Recibo 15.000")
+   
+
+
+} 
+
+
+
+ }
+
+
+
+   }
+ 
+ </script>
+ 
+
+
+    <script src="./js/jquery.min.3.6.js"> </script>
+    <script src="./bootstrap/jss/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>

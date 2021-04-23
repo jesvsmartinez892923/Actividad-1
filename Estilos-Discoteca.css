@@ -1,0 +1,11 @@
+.container{
+    margin-top: 180px;
+}
+body{
+    background-color: rgb(90, 90, 235);
+}
+
+.card-header{
+    background-color:lightgrey;
+    text-align: center;
+}
